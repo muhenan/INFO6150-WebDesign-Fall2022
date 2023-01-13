@@ -1,7 +1,0 @@
-logo.jpg https://unsplash.com/photos/1o8VV8yOw40
-panda1.jpg https://unsplash.com/photos/s-fD5Tpew2k
-panda2.jpg https://unsplash.com/photos/GYpsSWHslHA
-panda3.jpg https://unsplash.com/photos/MfmCt8fRaQw
-panda4.jpg https://unsplash.com/photos/e3mu-MTj7Xk
-panda5.jpg https://unsplash.com/photos/fFO5DsFV5gk
-panda6.jpg https://unsplash.com/photos/Fmkf0HZPPsQ
