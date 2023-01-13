@@ -1,0 +1,90 @@
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  height: 100%;
+
+  text-align: center;
+}
+
+/*
+
+Header
+
+*/
+
+header {
+  background-color: orange;
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.globalnav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  margin: 0;
+  padding: 1rem;
+
+  background-color: orange;
+
+  list-style: none;
+}
+
+.globalnav__menu li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  text-align: center;
+
+  background-color: antiquewhite;
+}
+
+.globalnav__menu li:hover {
+  background-color: blue;
+}
+
+.globalnav__menu li a {
+  padding: 1rem;
+}
+
+.globalnav__menu li:hover a {
+  color: white;
+}
+
+
+
+/*
+
+Main
+
+*/
+
+main {
+  background-color: antiquewhite;
+}
+
+/*
+
+Footer Here
+
+*/
+
+footer {
+  /* grid-column: span 12; */
+
+  padding: 1rem;
+
+  border-top: 0.5px dotted black;
+
+  background-color: burlywood;
+}
+
+footer div {
+  text-align: center;
+}

@@ -1,0 +1,169 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  font-family: sans-serif;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  height: 100%;
+}
+
+/*
+
+Header Here
+
+*/
+
+.loge__and_title {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  align-self: flex-start;
+
+  aspect-ratio: 1 / 1;
+  width: 50px;
+  height: 50px;
+}
+
+.header__title {
+  margin: 0 auto;
+}
+
+.globalnav__menu {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 1rem;
+
+  list-style: none;
+}
+
+.globalnav__menu li {
+  margin: 0.5rem;
+
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+/*
+
+Main Here
+
+*/
+.main__title {
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0.5rem;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+
+  background-color: palegreen;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.card__pic {
+  aspect-ratio: 1 / 1;
+  width: 80%;
+  border-radius: 1rem;
+}
+
+.card__text {
+  margin: 1rem;
+
+  font-size: 1rem;
+}
+
+.card__cta {
+  display: block;
+
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid green;
+  border-radius: 1rem;
+
+  background-color: green;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/*
+
+Footer Here
+
+*/
+.footernav__menu {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 1rem;
+
+  list-style: none;
+}
+
+.footernav__menu li {
+  margin: 0.5rem;
+
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 50rem) {
+  .globalnav__menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .card {
+    grid-column: span 4;
+  }
+
+  .footernav__menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .footernav__menu li {
+    grid-column: span 4;
+  }
+}

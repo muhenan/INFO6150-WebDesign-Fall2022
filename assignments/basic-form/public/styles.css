@@ -1,0 +1,98 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: aliceblue;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin: 0;
+
+  font-family: sans-serif;
+}
+
+/*
+
+Header Here
+
+
+*/
+
+h1 {
+  text-align: center;
+}
+
+/*
+
+
+Main Here
+
+
+*/
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form * {
+  margin: 0.5rem auto;
+}
+
+form button {
+  margin-top: 3rem;
+
+  width: 10rem;
+  height: 2rem;
+  border: 0;
+
+  color: white;
+  background-color: cornflowerblue;
+}
+
+/* .required:after {
+  content: " *";
+  color: red;
+} */
+
+.required span:after {
+  content: " *";
+  color: red;
+}
+
+/*
+
+
+Footer Here
+
+
+*/
+
+footer {
+  padding: 1rem;
+
+  border-top: 0.5px dotted black;
+}
+
+footer div {
+  text-align: center;
+}
+
+
+@media screen and (max-width: 50rem) {
+  form * {
+    margin: 0.2rem auto;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+}
