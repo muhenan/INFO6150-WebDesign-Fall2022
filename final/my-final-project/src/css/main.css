@@ -1,0 +1,73 @@
+main {
+  /* background-image: linear-gradient(to right, #ffb1f2, #ffb3c6, #ffc89d, #ffe48f, #cfffab); */
+  background-image: linear-gradient(to right, #ffeafb, #ffebf0, #ffefe5, #fff6de, #faffe1);
+
+  padding-bottom: 2rem;
+}
+
+
+
+/**
+
+Title 2
+
+*/
+
+.title2 {
+  text-align: center;
+}
+
+.title2 h2 {
+  font-size: 3rem;
+}
+
+/**
+
+Texts
+
+*/
+
+.texts p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/**
+
+Join us form
+
+*/
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 3rem 0;
+
+  background-image: linear-gradient(to right, #ffbaf3, #ffc1d3, #ffd3bc, #ffeab8, #f7ffcb);
+}
+
+form * {
+  margin: 0.5rem auto;
+}
+
+form button {
+  margin-top: 3rem;
+
+  width: 10rem;
+  height: 2rem;
+  border: 0;
+
+  font-weight: bolder;
+
+  color: white;
+  background-color: black;
+}
+
+.validation-failure {
+  padding: 0.5rem;
+  margin-bottom: 0;
+  border: 1px solid red;
+
+  color: red;
+}
